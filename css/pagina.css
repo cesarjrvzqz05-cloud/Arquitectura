@@ -1,0 +1,132 @@
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(51, 51, 212);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+body{
+    background-color: lightblue;
+    font-family: sans-serif;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color: black;
+}
+
+marquee{
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 70px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.lista-unidades a:hover{
+    color: white;
+}
+
+section{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.Unidad_Central{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+div{
+    background-color: lavender;
+    margin: 0 auto;
+    text-align: left;
+    align-items: left;
+}
+
+div h2{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header a:hover{
+    color: white;
+}
+
+.Arquitectura_Clasica img{
+    align-items:center;
+    height: 250px;
+    margin-right: 20px;
+}
+
+.imagen {
+    align-items: center;
+    text-align: center;
+}
+
+.Temario{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Temario a:hover{
+    color: rgb(77, 79, 235);
+}
+
+.PracticasSeccion{
+    width: 80%;               
+        margin: 0 auto;     
+        border: none;
+        overflow: hidden;
+}
+
+div h1{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
