@@ -16,7 +16,7 @@
         </a>
 
         <nav>
-            <a href="#" class="link">Cesar Vazquez Godina</a>
+            <a href="#" class="link" id="clickCesar">Cesar Vazquez Godina</a>
             <a href="#" class="link">Arquitectura de Computadoras</a>
         </nav>
     </header>
@@ -67,6 +67,22 @@
             <br>○ Practica de Cotizacion de Equipos 
         </div>
     </main>
+
+    <script>
+        let contador = 0;
+        const clickCesar = document.getElementById("clickCesar");
+
+        clickCesar.addEventListener("click", function(e) {
+            e.preventDefault();
+            contador++;
+            if(contador >= 6){
+                window.location.href = "https://tfwiki.net/wiki/Devastator_(G1)"; 
+            } else {
+                alert("Clic " + contador + " de 6");
+            }
+        });
+    </script>
+    
 </body>
 
 <br>
@@ -77,6 +93,7 @@
 </footer>
 
 </html>
+
 
 
 
