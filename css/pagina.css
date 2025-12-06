@@ -77,6 +77,12 @@ div{
     align-items: left;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 div h2{
     text-align: center;
     align-items: center;
@@ -129,4 +135,5 @@ div h1{
     nav{
         padding: 10px 0px;
     }
+
 }
