@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="C:\Users\Enduser\Documents\Pagina_Arqui\css\pagina.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE-edge">
+        <meta name="viewport"
+        content="width-device-width, initial-scale=1.
+        0">
+        <title>Arquitectura</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="C:\Users\Enduser\Documents\Pagina_Arqui\Index.html" class="logo">
+                <img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\download.png" alt="logo" class="logo-img">
+                <h2 class="logo-nombre"> Unidad 3</h2>
+            </a>
+        </header>
+
+        <main>
+            <section class="Chipset"> 
+                <h1>3.1 Chipset</h1>
+            <div class="Chipset1">
+                <p>
+                    <h2>Chipset</h2>
+                    Un chipset es un conjunto de circuitos integrados que actúa como el centro de comunicaciones de la placa base, conectando el procesador con otros componentes como la memoria, tarjetas de expansión y puertos (USB, teclado, etc.).
+                    <h3>Funcionamiento:</h3>
+                    El chipset gestiona el flujo de datos entre el procesador y los demás dispositivos del sistema a través de diversos buses, permitiendo que la placa base funcione como el eje central del ordenador.
+                    <h3>Arquitectura:</h3>
+                    <b>1.-Puente Norte (Northbridge):</b> Conectaba directamente el procesador con los componentes de alta velocidad, como la memoria RAM y la tarjeta gráfica (AGP o PCI-Express). En los procesadores más recientes, las funciones del puente norte ya vienen integradas en el propio procesador.
+                    <br><b>2.-Puente Sur (Southbridge):</b> Gestionaba la comunicación con los periféricos y componentes de menor velocidad, como los discos duros (IDE, SATA), puertos USB, ranuras PCI y otros dispositivos integrados en la placa base.
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\chipset.PNG" alt="">
+                    </div> 
+                </p>
+            </div>
+
+            <div class="C_PU">
+                <p>
+                    <h2>CPU</h2>
+                    La Unidad Central de Procesamiento (CPU), o procesador, es el componente fundamental de una computadora. Su función principal es interpretar y ejecutar las instrucciones de los programas realizando operaciones aritméticas y lógicas básicas. A lo largo del tiempo, las CPUs han evolucionado para ser más potentes, eficientes y económicas. Hoy en día, un procesador puede contener varios "núcleos" (que son como múltiples CPUs en un solo chip) o incluso integrar otros componentes del sistema, lo que se conoce como Sistema en un Chip (SoC).
+                    <h3>Componentes de la CPU:</h3>
+                    <b>● Unidad aritmetica logica (ALU): </b>realiza operaciones aritméticas y lógicas. 
+                    <br><b>● Unidad de control (CU): </b> dirige el tráfico de información entre los registros de la CPU y conecta con la ALU las instrucciones extraídas de la memoria. 
+                    <br><b>● Registros internos: </b> no accesibles (de instrucción, de bus de datos y bus de dirección) y accesibles de uso específico (contador programa, puntero pila, acumulador, flags, etc.) o de uso general.                  
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\CPU.PNG" alt="">
+                    </div> 
+                </p>
+            </div>
+
+            <div class="Controlador_Bus">
+                <p>
+                    <h2>Controlador del Bus</h2>
+                    El controlador del bus se encarga de la frecuencia de funcionamiento y las señales de sincronismo, temporización y control. Está ubicado en un chip en la placa base. El bus es la vía a través de la que se van a transmitir y recibir todas las comunicaciones, tanto internas como externas, del sistema informático. El bus es solamente un dispositivo de transferencia de información entre los componentes conectados a él, no almacena información alguna en ningún momento. Los datos, en forma de señal eléctrica, sólo permanecen en el bus el tiempo que necesitan en recorrer la distancia entre los dos componentes implicados en la transferencia.
+                </p>
+            </div>
+
+            <div class="E/s">
+                <p>
+                    <h2>Dispositivos de Entrada/Salida</h2>
+                    Los dispositivos de entrada/salida son fundamentales para la interacción del usuario con el sistema y la transferencia de información hacia y desde el equipo.
+                    <br><br><b>1.-Dispositivos de entrada:</b> Son aquellos que permiten al usuario introducir datos o comandos al sistema.
+                    <br>● Teclado: Se selecciona un teclado mecánico/membrana según el uso previsto. 
+                    <br>&nbsp ○ Ejemplo: Teclado mecánico Redragon Kumara K552 (USB, retroiluminado).
+                    <br>&nbsp ○ Justificación: Alta durabilidad, precisión en la escritura y respuesta rápida para tareas de productividad.
+                    <br><br>● Raton(Mouse): 
+                    <br>&nbsp ○ Ejemplo: Logitech G203 Lightsync (USB, 8000 DPI).
+                    <br>&nbsp ○ Justificación: Justificación: Sensor óptico de alta precisión y ergonómico.
+                    <br><br>● Otros dispositivos opcionales: 
+                    <br>&nbsp ○ Lector de huellas, tableta digitalizadora o control de juego (según el propósito del equipo).
+
+                    <br><br><b>2.-Dispositivos de salida:</b> Permiten visualizar, escuchar o recibir la información procesada por el sistema.
+                    <br>● Monitor:
+                    <br>&nbsp ○ Ejemplo: Monitor ASUS VG24VQ 24” FHD, 165Hz.
+                    <br>&nbsp ○ Justificación: Alta tasa de refresco, ideal para tareas gráficas y videojuegos.
+                    <br><br>● Altavoces o Audifonos:
+                    <br>&nbsp ○ Ejemplo: Logitech Z313 (2.1 canales, 50W RMS).
+                    <br>&nbsp ○ Justificación: Buena calidad de sonido para uso multimedia o entretenimiento.
+
+                    <br><br><b>3.-Puertos y Conectividad de E/S:</b> 
+                    <br>● Puertos traseros y frontales del gabinete:
+                    <br>&nbsp ○ Ejemplo: USB 2.0, USB 3.2, HDMI, DisplayPort, RJ-45, audio HD y entrada/salida de micrófono.
+                    <br>&nbsp ○ Justificación: Permiten conexión de periféricos, dispositivos externos y redes.
+                    <br><br>● Conectividad inalámbrica:
+                    <br>&nbsp ○ Ejemplo: Wi-Fi 6 y Bluetooth 5.3 integrados (según tarjeta madre o adaptador adicional).
+                    <br>&nbsp ○ Justificación: Mayor velocidad y estabilidad en conexiones sin cable.
+
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\teclado.png" alt="">
+                        <img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\mouse.PNG" alt="">
+                    </div> 
+            </div>
+
+            <div class="Controlador_Interrupcion">
+                <p>
+                    <h2>Controlador de Interrupciones</h2>
+                    El controlador del bus se encarga de la frecuencia de funcionamiento y las señales de sincronismo, temporización y control. Está ubicado en un chip en la placa base. El bus es la vía a través de la que se van a transmitir y recibir todas las comunicaciones, tanto internas como externas, del sistema informático. El bus es solamente un dispositivo de transferencia de información entre los componentes conectados a él, no almacena información alguna en ningún momento. Los datos, en forma de señal eléctrica, sólo permanecen en el bus el tiempo que necesitan en recorrer la distancia entre los dos componentes implicados en la transferencia.
+                </p>
+                <p>
+                    <h2>Controlador de Acceso a Memoria</h2>
+                    El controlador de acceso directo a memoria (DMA, por sus siglas en inglés: Direct Memory Access) es un componente del sistema que permite a ciertos dispositivos de hardware transferir datos directamente hacia o desde la memoria principal (RAM) sin necesidad de que la unidad central de procesamiento (CPU) intervenga en cada operación.
+                    <br>Esta característica mejora considerablemente la eficiencia del sistema, ya que libera al procesador de tareas repetitivas de transferencia de datos, permitiéndole concentrarse en procesos de mayor prioridad.
+                </p>
+            </div>
+
+            <div class="Transferencia_DMA">
+                <p>
+                    <h2>Tipos de Transferencia DMA</h2>
+                    El Acceso Directo a Memoria (DMA) es un mecanismo que permite a los periféricos transferir datos directamente a la memoria RAM, reduciendo significativamente la carga de trabajo del procesador. Este proceso es gestionado por un chip especializado llamado Controlador de DMA (DMAC).
+                    <br><b>● DMA por rafaga (Burst Mode):</b>
+                    <br>El controlador transfiere un bloque completo de datos en una sola operación, bloqueando temporalmente el acceso al bus para otros dispositivos.
+                    <br>
+                    <br><b>● DMA por ciclo robado (Cycle Stealing):</b>
+                    <br>El controlador DMA toma el control del bus solo durante breves intervalos, permitiendo que la CPU siga ejecutando tareas entre transferencias.
+                    <br>
+                    <br><b>● DMA transparente:</b>
+                    <br>El controlador transfiere datos únicamente cuando la CPU no está utilizando el bus.
+
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\grafico2.PNG" alt="">
+                    </div> 
+                </p>
+            </div>
+
+            <div class="Temporizacion">
+                <p>
+                    <h2>Circuitos de Temporizacion</h2>
+                    Los circuitos de temporización, también conocidos como temporizadores o circuitos de retardo, son componentes electrónicos diseñados para activar o desactivar una función después de un tiempo preestablecido. Su principal objetivo es controlar cuándo una acción debe empezar o detenerse.
+                    <br><b>● Medir intervalos:</b>
+                    <br>Calcula el tiempo transcurrido entre dos eventos o la duración de un proceso.
+                    <br>
+                    <br><b>● Generar Pausas:</b>
+                    <br>Crea retardos controlados en las operaciones.
+                    <br>
+                    <br><b>● Mantener la hora:</b>
+                    <br>Ayuda a mantener actualizadas la fecha y la hora del sistema mientras la PC está encendida.
+                </p>
+            </div>
+
+            <div class="Controlador_Video">
+                <p>
+                    <h2>Controladores de Videos</h2>
+                    Los controladores de video son programas (drivers) que actúan como intermediarios entre el sistema operativo de una computadora y el hardware de video (tarjeta gráfica). Su función principal es traducir las instrucciones del sistema operativo para que el hardware pueda generar y mostrar imágenes de manera efectiva en el monitor. La arquitectura de los controladores de video involucra una comunicación eficiente entre el software y el hardware a través de capas lógicas y físicas, asegurando que el sistema pueda gestionar la mezcla de datos y la salida de píxeles en la pantalla.
+                </p>
+            </div>
+            </section>
+
+            <section class="Almacenamiento_secc"> 
+                <h1>3.2 Almacenamiento</h1>
+                <div class="Almacenamiento_div">
+                <p>
+                    <h2>Almacenamiento</h2>
+                    El almacenamiento de una computadora se refiere a los componentes que guardan y recuperan datos digitales. Se diferencia en dos tipos principales: la memoria a corto plazo (RAM) y el almacenamiento a largo plazo (dispositivos de almacenamiento), que guarda los archivos de forma permanente. 
+                    <br><b>Memoria RAM (almacenamiento primario o volátil):</b>
+                    <br>● Funcion: Guarda temporalmente los datos de los programas y archivos que se están utilizando en el momento.
+                    <br>● Velocidad: Es muy rápida, permitiendo que la CPU (unidad central de procesamiento) acceda a los datos de forma casi instantánea.
+                    <br>● Volatilidad: Pierde toda la información almacenada cuando se apaga el equipo.
+                    <br>
+                    <br><b>Almacenamiento permanente (almacenamiento secundario o no volátil):</b>
+                    <br>● Funcion: Almacena de forma permanente el sistema operativo, los programas y todos tus archivos (documentos, fotos, etc.).
+                    <br>
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\almacenamiento.PNG" alt="">
+                    </div> 
+                    <br><h2>Tipos de Dispositivos de Almacenamiento</h2>
+                    <b>1.- Unidades de Estado Sólido (SSD):</b>
+                    <br>● Estas unidades aprovechan el acceso directo a memoria para realizar transferencias de alta velocidad sin intervención constante del procesador.
+                    <br><br><b>2.- Discos Duros Mecánicos (HDD):</b>
+                    <br>● Emplean platos magnéticos y cabezales de lectura/escritura.
+                    <br>● Aunque más lentos que los SSD, los HDD también utilizan DMA para optimizar la transferencia de datos y reducir la carga de la CPU.
+                    <br><br><b>3.-Unidades Externas y Portatiles:</b>
+                    <br>● Conectadas por USB 3.2, Thunderbolt o eSATA, permiten almacenamiento adicional o copias de seguridad.
+                    <br>● El controlador del bus USB o Thunderbolt gestiona las operaciones DMA para maximizar la velocidad de transferencia.
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\SSD.PNG" alt="">
+                    </div>  
+                </div>
+            </section>
+
+            <section class="Fuentes_secc"> 
+                <h1>3.3 Fuentes de Alimentacion</h1>
+                <div class="Fuentes_div">
+                <p>
+                    <h2>Fuentes de Almacenamiento</h2>
+                    <br>La fuente de alimentación, también conocida como PSU (Power Supply Unit), es uno de los componentes más críticos de una computadora. Su función principal es convertir la corriente alterna (AC) , que es la que recibes del enchufe de la pared (110V o 220V), en corriente continua (DC) , que es la que utilizan los delicados componentes internos del PC en voltajes mucho más bajos (como +12V, +5V y +3.3V).
+                    <br><h2>Características Clave</h2>
+                    <br><b>1.-Potencia (Watts): (Watts):Es la cantidad total de energía que la fuente puede suministrar. Se mide en vatios (W).</b>
+                    <br>● Un PC de oficina básico puede necesitar solo 300W-400W.
+                    <br>● Un PC gaming de gama media suele requerir entre 550W y 650W.
+                    <br>● Un PC de alto rendimiento (con una tarjeta gráfica muy potente) puede necesitar 750W, 1000W o más.
+                    <br>
+                    <br><b>2.-Eficiencia:</b>La eficiencia mide cuánta energía del enchufe se convierte exitosamente en energía útil para el PC, y cuánta se desperdicia como calor.
+                    <br>La Certificación 80 Plus garantiza que la fuente tiene al menos un 80% de eficiencia bajo ciertas cargas. Esto es vital porque:
+                    <br>● Menos calor: Una fuente eficiente se calienta menos, lo que mejora la estabilidad.
+                    <br>● Menos ruido: Al calentarse menos, su ventilador gira más despacio y hace menos ruido.
+                    <br>● Ahorro de electricidad: Desperdicia menos energía, lo que reduce tu factura de luz.
+                    <br>
+                    <br><b>3.-Formato y Modularidad:</b>No todas las fuentes tienen el mismo tamaño ni el mismo sistema de cables.
+                    <br><b>Factor de Forma (Formato):</b>
+                    <br>● ATX: Es el tamaño estándar para la mayoría de los gabinetes (cajas) de PC de escritorio.
+                    <br>● SFX / SFX-L: Son formatos mucho más pequeños, diseñados para computadoras compactas (Mini-ITX).
+                    <br>
+                    <br><b>Gestion de Cables (Modularidad):</b>
+                    <br>● No Modular: Todos los cables vienen fijos y permanentemente conectados a la fuente. Es la opción más barata, pero te deja con un manojo de cables que no usas y que debes esconder en el gabinete, dificultando el flujo de aire.
+                    <br>● Semi-Modular: Los cables esenciales (como el de la placa base y CPU) vienen fijos, y los demás (para GPU, discos duros) los puedes conectar o quitar según los necesites.
+                    <br>● Totalmente Modular: La fuente es una caja con conectores. Tú conectas únicamente los cables que vas a usar. Es la mejor opción para una buena gestión de cables y un ensamblaje limpio.
+                
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\fuentes.PNG" alt="">
+                    </div> 
+                </div>
+            </section>
+
+            <section class="Ambientes_Secc"> 
+                <h1>3.4 Ambientes de Servicio</h1>
+                <div class="Ambientes_Div">
+                <p>
+                    <h2>Ambientes de Servicio</h2>
+                    <br>● Son entornos tecnológicos donde los sistemas de cómputo brindan soporte a diferentes actividades humanas y empresariales.
+                    <br>
+                    <br>● En arquitectura de computadoras, implican el uso de hardware, software, redes y bases de datos para ofrecer servicios eficientes.
+                    <br>
+                    <br>● Se dividen principalmente en negocios, industria y comercio electrónico, cada uno con necesidades tecnológicas específicas.
+                </div>
+
+                <div class="Ambientes_Negocios">
+                <p>
+                    <h2>Ambientes de Servicio en los Negocios</h2>
+                    <br>En este contexto, los servicios están orientados a operaciones internas, gestión de datos y soporte a empleados.
+                    <br>
+                    <br>&nbsp <b>●  Servicios Tipicos: </b>Sistemas de Planificación de Recursos Empresariales (ERP), Gestión de Relaciones con Clientes (CRM), bases de datos de contabilidad, correo electrónico corporativo y portales internos.
+                    <br>
+                    <br>&nbsp <b>● Requisitos:</b>
+                    <br>&nbsp &nbsp ○ Fiabilidad y Consistencia: La prioridad es que los datos sean correctos y estén siempre disponibles durante el horario laboral.
+                    <br>&nbsp &nbsp ○ Seguridad Centralizada: Los datos son sensibles (nóminas, finanzas, datos de clientes) y deben estar protegidos.
+                    <br>&nbsp &nbsp ○ Procesamiento de Transacciones (OLTP): La arquitectura debe ser excelente manejando muchas operaciones pequeñas de lectura/escritura en bases de datos (ej. guardar una factura, actualizar un contacto).
+                </div>
+
+                <div class="Ambientes_Industria">
+                <p>
+                    <h2>Ambientes de Servicio en la Industria</h2>
+                    <br>Aquí, los servicios se enfocan en el control, monitoreo y automatización de procesos físicos en el mundo real.
+                    <br>
+                    <br>&nbsp <b>●  Servicios Tipicos: </b> Control de maquinaria en una línea de ensamblaje, monitoreo de sensores (temperatura, presión), sistemas SCADA (Control de Supervisión y Adquisición de Datos), logística de almacén.
+                    <br>
+                    <br>&nbsp <b>● Requisitos:</b>
+                    <br>&nbsp &nbsp ○ Tiempo Real (Real-Time): Un retraso no es una molestia, es un fallo catastrófico. La arquitectura debe garantizar que una instrucción (ej. "detener brazo robótico") se ejecute en un plazo de milisegundos.
+                    <br>&nbsp &nbsp ○ Robustez y Durabilidad: El hardware (computadoras) a menudo debe operar en ambientes hostiles (polvo, vibraciones, temperaturas extremas).
+                    <br>&nbsp &nbsp ○ Alta Disponibilidad: Los sistemas no pueden fallar. Se usa redundancia (hardware duplicado) para que si un componente falla, otro tome su lugar instantáneamente.
+                </div>
+
+                <div class="Ambientes_Comercio">
+                <p>
+                    <h2>Ambientes de Servicio en el Comercio Electronico</h2>
+                    <br>Este ambiente está diseñado para atender a millones de usuarios externos (clientes) de forma simultánea, 24/7, con un enfoque en la velocidad y la escalabilidad.
+                    <br>
+                    <br>&nbsp <b>●  Servicios Tipicos: </b> Tienda en línea, catálogo de productos, carrito de compras, pasarelas de pago, motores de recomendación ("quizás también te guste...").
+                    <br>
+                    <br>&nbsp <b>● Requisitos:</b>
+                    <br>&nbsp &nbsp ○ Escalabilidad Masiva: El sistema debe manejar picos de tráfico inmensos (como durante el Black Friday) sin colapsar.
+                    <br>&nbsp &nbsp ○ Alta Disponibilidad (24/7): El servicio nunca puede caerse. "Cerrado por mantenimiento" no es una opción.
+                    <br>&nbsp &nbsp ○ Baja Latencia: El sitio web debe cargar en segundos para no perder al cliente.
+                </div>
+
+            </section>
+        </main>
+    </body>
+
+    <footer>
+        <marquee  direction="left"><br>©Cesar Vazquez Godina - Arquitectura de Computadoras - 2025 - Todos los derechos reservados</marquee>
+        <br>
+    </footer>
+</html>

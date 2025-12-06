@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="C:\Users\Enduser\Documents\Pagina_Arqui\css\pagina.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE-edge">
+        <meta name="viewport"
+        content="width-device-width, initial-scale=1.
+        0">
+        <title>Arquitectura</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="C:\Users\Enduser\Documents\Pagina_Arqui\Index.html" class="logo">
+                <img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\download.png" alt="logo" class="logo-img">
+                <h2 class="logo-nombre"> Unidad 2</h2>
+            </a>
+        </header>
+
+        <main>
+        <section class="Organizacion">
+            <h1>2.1 Organizacion del procesador</h1>
+
+            <div class="imagen">
+               <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\grafico1.PNG" alt="">
+            </div> 
+
+            <div class="Unidad_Aritmetica">
+                <p>
+                    <h2>Unidad Aritmetica Logica</h2>
+                    <br>● Operaciones lógicas. AND, OR, NOT, XOR, NOR, NAND, etc.
+                    <br>● Operaciones aritméticas. Se refiere a la suma y resta de bits. Aunque a veces se usa la multiplicación y la división, aunque son más costosas de realizar.
+                    <br>● Operaciones de desplazamiento de bits. Desplazamiento de las posiciones de los bits en un cierto número de lugares hacia la derecha o hacia la izquierda, lo que se considera como una operación de multiplicación.
+                </p>
+            </div>
+
+            <div class="Registros_2">
+                <p>
+                    <h2>Registros</h2>
+                    <br>● Registro Contador de Programa (PC): Almacena la dirección de memoria de la siguiente instrucción a ejecutar.
+                    <br>● Registro de Instrucción (IR): Almacena la instrucción a ejecutar.
+                    <br>● Decodificador de Instrucciones (ID): Genera los valores de las señales de control para la ejecución de cada instrucción.
+                    <br>● Reloj: Marca el ritmo al cual se llevan a cabo las operaciones.
+                </p>
+            </div>
+
+            <div class="Unidad_Control">
+                <p>
+                    <h2>Unidad de Control (UC)</h2>
+                    <br>● La unidad de control tiene tres funciones principales:
+                    <br>&nbsp &nbsp ○ Búsqueda de instrucciones: La UC busca las instrucciones almacenadas en la memoria principal de la computadora.
+                    <br>&nbsp &nbsp ○ Decodificación de instrucciones: Una vez encontradas, la UC interpreta las instrucciones y las convierte en señales comprensibles para el resto de los componentes de la CPU.
+                    <br>&nbsp &nbsp ○ Ejecución de instrucciones: La UC utiliza la unidad de proceso para llevar a cabo las instrucciones decodificadas y producir los resultados correspondientes.
+                </p>
+            </div>
+
+            <div class="Interconexion">
+                <p>
+                    <h2>Interconexion Interna del CPU</h2>
+                    <br>Red de comunicación de alta velocidad que permite a las unidades clave del procesador (Unidad de Control, ALU y Registros) intercambiar información de forma coordinada.
+                    <br><b>1.-Transporte de Datos (Bus de Datos)</b>
+                    <br>&nbsp ● Función: Mueve los valores numéricos y operacionales (los datos) entre los componentes.
+                    <br><b>2.-Especificacion de Ubicacion (Bus de Direcciones)</b>
+                    <br>&nbsp ● Función: Identifica el origen o el destino exacto de la información dentro del chip.
+                    <br><b>3.-Sincronización y Mando (Bus de Control)</b>
+                    <br>&nbsp ● Función: Transmite las señales de control que dirigen y temporizan las operaciones de todas las unidades.
+                </p>
+            </div>
+        </section>
+
+         <div class="imagen">
+            <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\componentes.PNG" alt="">
+         </div> 
+
+        <section class="Estructura_Registros">
+            <h1>2.2 Estructuras de Registros</h1>
+            <div class="Registros_Est">
+                <div class="imagen">
+                    <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\registros1.PNG" alt="">
+                </div>
+
+                <p>
+                    El conjunto de registros que componen la CPU sirven como una capa de memoria por encima de la memoria principal y la memoria caché.
+                    <br>Los registros de la CPU tienen dos propósitos:
+                    <br>&nbsp ● Registro visible para el usuario.
+                    <br>&nbsp ● Registro de control y estado.
+
+                </p>
+            </div>
+
+            <div class="Visibles">
+                <p>
+                    <h2>Registros Visibles para el Usuario</h2>
+                    <br>Utilizando el uso de registros, el lenguaje de máquina o el programador ensamblador pueden reducir la cantidad de veces que se hace referencia a la memoria principal.
+                    <br>A los registros de proposito general se les asignan las siguientes tareas: Registros de datos: Estos registros solo se pueden utilizar para almacenardatos.
+                    <br><b>● Punteros de segmento:</b> La dirección de la base de un segmento se almacena en un registro en una CPU que utiliza direccionamiento segmentado. Tanto los modos de direccionamiento de propósito general como los modos de direccionamiento específicos se pueden utilizar con un registro de direcciones.
+                    <br><b>● Registros de Indice:</b> Estos pueden autoindexarse y se utilizan para el direccionamiento de índices.
+                    <br><b>● Stack Pointer:</b> Si hay direccionamiento de pila visible para el usuario, entonces típicamente la pila está en la memoria y hay un registro dedicado que apunta a la parte superior de la pila. Esto permite que las instrucciones de empujar, sacar y otras instrucciones de pila no necesitan contener un operando de pila explícito.
+                    <br><b>● Condition Codes:</b> Estos son parcialmente visibles como tipo de registro. También se les conoce como banderas. Los bits del registro se establecen de acuerdo con el resultado de una operación.
+                </p>
+            </div>
+
+            <div class="Registros_Control">
+                <p>
+                    <h2>Registros de Control</h2>
+                    <br>Los registros de control son ubicaciones de almacenamiento de alta velocidad dentro del procesador que guardan información para el sistema operativo, la unidad de control y el propio sistema, permitiendo gestionar el flujo de instrucciones y las funciones del sistema. Estos registros son esenciales para la estabilidad y seguridad del sistema, almacenando datos de estado y configuración que no suelen ser visibles para los programadores de aplicaciones.
+                    <br>A los registros de proposito general se les asignan las siguientes tareas: Registros de datos: Estos registros solo se pueden utilizar para almacenardatos.
+                    <br><b>● Punteros de segmento:</b> La dirección de la base de un segmento se almacena en un registro en una CPU que utiliza direccionamiento segmentado. Tanto los modos de direccionamiento de propósito general como los modos de direccionamiento específicos se pueden utilizar con un registro de direcciones.
+                    <br><b>● Registros de Indice:</b> Estos pueden autoindexarse y se utilizan para el direccionamiento de índices.
+                    <br><b>● Stack Pointer:</b> Si hay direccionamiento de pila visible para el usuario, entonces típicamente la pila está en la memoria y hay un registro dedicado que apunta a la parte superior de la pila. Esto permite que las instrucciones de empujar, sacar y otras instrucciones de pila no necesitan contener un operando de pila explícito.
+                    <br><b>● Condition Codes:</b> Estos son parcialmente visibles como tipo de registro. También se les conoce como banderas. Los bits del registro se establecen de acuerdo con el resultado de una operación.
+                    <h3>Caracteristicas Principales:</h3>
+                    ● Controlan y monitorizan la operación de un procesador o de un sistema computarizado.
+                    <br>●A menudo, son visibles solo en modo kernel y no directamente para el usuario o programador de aplicaciones.
+                    <br>●Capturan información sobre el estado del procesador y son cruciales para la ejecución de rutinas del sistema operativo.
+                    <br>●Los registros de control se destinan a la configuración y el control.
+                    <br>●Funcionan como una memoria de muy alta velocidad para un acceso rápido a información vital.
+                </p>
+            </div>
+
+            <div class="Registros_Control">
+                <p>
+                    <h2>Registros de Estado</h2>
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\registrosestados.PNG" alt="">
+                    </div>
+
+                    Almacenan información sobre el estado del procesador o procesos, permitiendo controlar el flujo y la ejecución del sistema.
+                    <br><br>En Hardware:
+                    <br>Registro de estado / banderas (FLAGS): contiene bits que indican resultados de operaciones.
+                    <br>● Cero: resultado igual a 0.
+                    <br>● Signo: positivo o negativo.
+                    <br>● Acarreo: existencia de carry/borrow.
+                    <br>Desbordamiento: excede la capacidad del registro.
+                    <br><br>En Sistemas Operativos:
+                    <br>Los registros de estado se relacionan con los "estados de un proceso"
+                    <br>● Nuevo → creado.
+                    <br>● Listo → esperando CPU.
+                    <br>● Ejecución → en curso.
+                    <br>● Finalizado → terminó.
+                    <br><br>Importancia:
+                    <br>Desbordamiento: excede la capacidad del registro.
+                    <br>● Control del flujo de instrucciones.
+                    <br>● Evita accesos innecesarios a memoria.
+                    <br>● Facilita el diagnóstico y la comprensión del sistema.
+                </p>
+            </div>
+
+            <section class="Estructura_Registros">
+            <h1>2.3 Ciclo de la Instruccion</h1>
+            <div class="CicloFDE">
+                <p>
+                    <h2>Ciclo Fetch-Decode-Execute (FDE)</h2>
+                    <b>1.-Busqueda(Fetch):</b>
+                    <br>● La CPU toma la dirección del **Contador de Programa (PC)
+                    <br>● La guarda en el MAR y trae la instrucción desde memoria al MDR.
+                    <br>● El PC se actualiza a la siguiente instrucción.
+                    <br>
+                    <br><b>2.-Decodificar(Decode):</b>
+                    <br>● La instrucción en el MDR se interpreta.
+                    <br>● La Unidad de Control identifica la operación y operandos.
+                    <br>● Se generan señales de control para ejecutar la orden.
+                    <br>
+                    <br><b>3.-Ejecucion(Execute):</b>
+                    <br>● Se realiza la operación: acceso a memoria, cálculo en la ALU o manejo de E/S.
+                    <br>● El resultado se guarda en el Acumulador u otro registro.
+                </p>
+            </div>
+
+            <div class="Segmentacion">
+                <p>
+                    <h2>Segmentacion</h2>
+                    <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\segmentacion.PNG" alt="">
+                    </div>
+                    <br>Segmentación es una técnica de manejo de memoria que divide la memoria en segmentos, cada uno con un tamaño y una función específicos. Cada segmento puede tener diferentes permisos de acceso y tamaños, lo que permite un mejor uso de la memoria. Esta técnica se utiliza para mejorar el rendimiento y la seguridad del sistema.
+                    <br>En la actualidad, la mayoría de las CPUs utilizan un modelo de memoria virtual en el que la segmentación se lleva a cabo de manera transparente al software. Esto significa que el software no tiene que preocuparse por la segmentación y puede acceder a la memoria de manera lineal como si no hubiera segmentación en absoluto.
+                </p>
+            </div>
+
+            <div class="Caracteristicas_Funciones">
+                <p>
+                    <h2>Características y funciones</h2>
+                    <h3>Caracteristicas del ciclo de instruccion:</h3>
+                    <br><b>● Secuencial:</b> las fases (búsqueda, decodificación, ejecución) se realizan una tras otra.
+                    <br><b>● Automatico:</b> la CPU repite el ciclo de forma continua mientras el sistema esté encendido.
+                    <br><b>● Controlado por la unidad de control:</b> esta coordina las señales y pasos del ciclo.
+                    <br><b>● Uso de registros clave:</b> PC, MAR, MDR, IR (registro de instrucción), acumulador, entre otros.
+                    <br><b>● Dependencia de la memoria:</b> requiere traer instrucciones y datos desde la memoria principal.
+                    <br><b>● Universal:</b> todo procesador lo aplica, aunque con variaciones según la arquitectura.
+                    <h3>Funciones del ciclo de instruccion</h3>
+                    <b>1.-Obtener instrucciones:</b> traer desde memoria la siguiente orden (fase de fetch).
+                    <br><b>2.-Interpretar instrucciones:</b> identificar la operación y los operandos (fase de decode).
+                    <br><b>3.- Ejecutar instrucciones:</b> realizar operaciones aritméticas, lógicas, de control o de E/S (fase de execute).
+                    <br><b>4.- Actualizar el PC:</b> preparar la CPU para la siguiente instrucción.
+                    <br><b>5.- Mantener la continuidad:</b> asegurar que el flujo de ejecución del programa se cumpla correctamente.
+                    <br><b>6.-Optimizar recursos:</b> coordinar CPU y memoria para trabajar de forma eficiente.
+                </p>
+            </div>
+
+            <h1>2.4 Modos de Direccionamiento</h1>
+            <div class="Direccionamiento1">
+                <p>
+                    <h2>Modos de Direccionamiento</h2>
+                    Los modos de direccionamiento son las diferentes formas de definir la ubicación de un operando en memoria, para que de esta forma el programa sea capaz de encontrarlo durante el tiempo de ejecución.
+                    <br><b>● Implicito:</b>Se utiliza sin declarar ninguna dirección, ya que las operaciones que lo utilizan ya conocen la dirección en la cual se encuentra el operando que se va a utilizar.
+                    <br><b>● Inmediato:</b>En este modo se declara directamente el valor del operando en la instrucción.
+                    <br><b>● Directo:</b>El operando hace referencia a un dato almacenado en la dirección especificada en la instrucción, la cual puede estar escrita de dos formas, como un registro o como una posición en memoria.
+                    <br><b>● Indirecto:</b>El operando se utiliza como una referencia a un dato que se encuentra almacenado en una posición de memoria, para esto el operando debe especificar un registro entre corchetes, el cual contiene la dirección de memoria a la que se desea acceder.
+                    <br><b>● Indexado:</b>El operando hace referencia a una posición en memoria, la cual puede ser expresada utilizando un numero el cual es sumado a un registro que funciona como un índice respecto a la dirección de memoria.
+                    <br><b>● Relativo:</b>En el direccionamiento relativo se declara el operando como el valor de un registro entre corchetes, al cual se le aplica un desplazamiento, es decir, se le suma un valor que indicara el desplazamiento a partir de la dirección indicada por el registro.
+                </p>
+            </div>
+
+            <h1>2.5 Estudio CPU</h1>
+            <div class="Estudio_CPU">
+                <p>
+                    Más allá de las mejoras constantes en las arquitecturas físicas de soporte, uno de los mayores desafíos se centra en cómo aprovechar al máximo la potencia de las mismas.
+                    <br>Interesa realizar investigación en la especificación, transformación, optimización y evaluación de algoritmos distribuidos y paralelos. Esto incluye el diseño y desarrollo de sistemas paralelos, la transformación de algoritmos secuenciales en paralelos, y las métricas de evaluación de performance sobre distintas plataformas de soporte (hardware y software).
+                    <h2>Lineas de investigacion y desarrollo</h2>
+                    <br>● Balance de carga estático y dinámico. Técnicas de balanceo de carga.
+                    <br>● Análisis de los problemas de migración y asignación óptima de procesos y datos a procesadores. Migración dinámica.
+                    <br>● Patrones de diseño de algoritmos paralelos.
+                    <br>● Implementación de soluciones sobre diferentes modelos de arquitectura homogéneas y heterogéneas (multicores, clusters, multiclusters y grid). Ajuste del modelo de software al modelo de hardware, a fin de optimizar el sistema paralelo.
+                    <br>● Laboratorios remotos para el acceso transparente a recursos de cómputo paralelo.
+                </p>
+            </div>
+
+        </section>
+        </main>
+    </body>
+
+
+   <footer>
+        <marquee  direction="left"><br>©Cesar Vazquez Godina - Arquitectura de Computadoras - 2025 - Todos los derechos reservados</marquee>
+        <br>
+    </footer>
+</html>

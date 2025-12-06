@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="C:\Users\Enduser\Documents\Pagina_Arqui\css\pagina.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE-edge">
+        <meta name="viewport"
+        content="width-device-width, initial-scale=1.
+        0">
+        <title>Arquitectura</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="C:\Users\Enduser\Documents\Pagina_Arqui\Index.html" class="logo">
+                <img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\download.png" alt="logo" class="logo-img">
+                <h2 class="logo-nombre"> Unidad 1</h2>
+            </a>
+        </header>
+
+        <main>
+        <section class="Modelos_Arquitectura">
+            <br><h1>1.1 Modelos de Arquitectura</h1>
+            <div class="Arquitectura_Clasica">
+                <p>
+                    <h2>Modelos de Arquitectura Clasica</h2>
+                    Son las más antiguas y tradicionales. Se basan en un solo procesador que ejecuta las instrucciones de manera secuencial.
+                    <br>● Características:
+                    <br>&nbsp ○ Un procesador central (CPU).
+                    <br>&nbsp ○ Ciclo de instrucción clásico: buscar → decodificar → ejecutar → almacenar.
+                    <br>&nbsp ○ No hay paralelismo; una instrucción debe terminar antes de iniciar la siguiente.
+                    <br>● Ejemplo:
+                    <br>&nbsp ○ La arquitectura Von Neumann (tanto datos como instrucciones comparten la misma memoria).
+                    <br>&nbsp ○ Las primeras computadoras como la ENIAC o la IBM 701.
+                    <br>● Ventaja: Simplicidad de diseño.
+                    <br>● Desventaja: Lento al no poder ejecutar varias instrucciones a la vez.
+                    <div class="imagen">
+                        Computadora ENIAC &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp Computadora IBM 701
+                    <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\Eniac.PNG" alt="">
+                    <img  src="C:\Users\Enduser\Documents\Pagina_Arqui\img\ibm.PNG" alt="">
+                    </div>
+                </p>
+            </div>
+
+            <div class="Arquitectura_Segmentada"> 
+                <p>
+                    <h2>Modelos de Arquitectura Segmentada</h2>
+                    Las instrucciones se dividen en etapas, y varias pueden ejecutarse de forma superpuesta, como en una línea de producción.
+                    <br>● Características:
+                    <br>&nbsp ○ Se utiliza la técnica de pipeline.
+                    <br>&nbsp ○ Ejemplo de etapas:
+                    <br>&nbsp ○ buscar → decodificar → ejecutar → memoria → volver a escribir.
+                    <br>Aumenta la velocidad porque mientras una instrucción se ejecuta, otra puede estar siendo decodificada, y otra siendo buscada en memoria.
+                    <br>● Ejemplo:
+                    <br>&nbsp ○ Procesadores RISC (como los ARM o MIPS).
+                    <br>&nbsp ○ Procesadores Intel y AMD modernos usan pipelines con muchas etapas.
+                    <br>● Ventaja: Mayor rendimiento sin necesidad de duplicar procesadores.
+                    <br>● Desventaja: Problemas de “atascos” (hazards) si una instrucción depende de otra. 
+                </p>
+            </div>
+
+            <div class="Arquitectura_Multi"> 
+                <p>
+                    <h2>Modelos de Arquitectura Multiprocesamiento</h2>
+                    <br>Se usan varios procesadores o núcleos que trabajan en paralelo para resolver múltiples tareas o una tarea más rápido.
+                    <br>● Características:
+                    <br>&nbsp ○ Pueden ser SMP (multiprocesamiento simétrico, todos los procesadores comparten la misma memoria) o MPP (masivamente paralelos, cada procesador tiene su propia memoria).
+                    <br>&nbsp ○ Capacidad de ejecutar hilos e instrucciones en paralelo.
+                    <br>&nbsp ○ Muy usadas en servidores, supercomputadoras y PCs multicore.
+                    <br>● Ejemplo:
+                    <br>&nbsp ○ Procesadores modernos de 4, 8, 16 núcleos (Intel i7, Ryzen).
+                    <br>&nbsp ○ Supercomputadoras como Summit o Fugaku que usan miles de procesadores.
+                    <br>● Ventaja: Mucho mayor rendimiento y capacidad de procesamiento.
+                    <br>● Desventaja: Complejidad en la sincronización y programación paralela.  
+                    <div class="imagen">
+                        Supercomputadora Summit
+                    <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\sumit.PNG" alt="">
+                    </div>           
+                </p>
+            </div>
+        </section>
+
+        <section class="Unidad_Central">
+            <br><h1>1.2 Analisis de Componentes</h1>
+            <h1>1.2.1 Unidad Central de Procesamiento (CPU)</h1>
+            <div class="Cpu"> 
+                <p>
+                    <h2>Unidad Central de Procesamiento</h2>
+                     Cpu es la abreviación de unidad central de procesamiento, un componentebásico de todo dispositivo que procesa datos y realiza cálculos matemáticos-informáticos.
+                    En primer lugar, es el encargado de recibir e interpretar datos y ejecutar lassecuencias de instrucciones a realizar por cada programa valiéndose de
+                    operaciones aritméticas y matemáticas. El cpu interpreta todos los datos que provienen del dispositivo, tanto de los programas como la información que envía el usuario a través de aplicaciones.
+                    Además, controla el buen funcionamiento de cada componente del sistemapara que todas las acciones sean realizadas en tiempo y forma.
+                </p>
+                <div class="imagen">
+                    <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\cpu.jpg" alt="">
+                    </div> 
+            </div>
+
+            <div class="Alu">
+                <p>
+                    <h2>Unidad Aritmetica Logica</h2>
+                    La alu (unidad aritmética lógica) es un circuito electrónico cuya función es
+                    ejecutar todos los procesos relacionados con los procedimientos de lógica y
+                    cálculo numérico. Figura como un componente indispensable de la unidad central de
+                    procesamiento (cpu) de las computadoras
+                    la alu realiza primordialmente operaciones lógicas y matemáticas, incluyendo las
+                    operaciones de desplazamiento de bits. Estos son procesos fundamentales que se
+                    deben ejecutar en casi todos los datos que procesa la cpu.
+                    La unidad aritmética lógica es ese componente de la cpu que ejecuta todos los
+                    cálculos que la cpu pueda necesitar. Es la parte “calculadora” de la computadora,
+                    ya que realiza las operaciones aritméticas y lógicas básicas.
+                    Gran parte de los procedimientos son de índole lógica. Acorde al diseño que tenga la
+                    alu, se le podrá dar a la cpu mayor potencia. Sin embargo, hará también que gaste más
+                    energía y produzca más calor.
+                </p>
+            </div>
+
+            <div class="Registros">
+                <p>
+                    <h2>Registros</h2>
+                    Los registros son componentes esenciales de la unidad de control y la unidad lógica
+                    aritmética (alu) del cpu. Almacenan información temporalmente para facilitar las
+                    operaciones del cpu. Se dividen en:
+                    <br><b>Registros de segmento de memoria:</b> almacenan direcciones de memoria donde
+                    <br><b>Registros de propósito general:</b> almacenan los datos con los que se trabaja.
+                    residen los datos.
+                    <br><b>Registros de instrucciones:</b> controlan el estado del cpu.
+                </p>
+            </div>
+
+            <div class="Buses">
+                <p>
+                    <h2>Buses</h2>
+                    Un bus es un conjunto de cables que permite la comunicación entre dispositivos hardware.
+                    <br><b>Bus de datos:</b> Transporta los datos entre los componentes del sistema.
+                    <br><b>Bus de control:</b> almacenan los datos con los que se trabaja.
+                    residen los datos.gobierna el acceso a los buses de datos y direcciones, evitando colisiones.
+                    <br><b>Bus de direcciones:</b> indica la dirección de memoria del dato en tránsito.
+                </p>
+            </div>
+
+            <h1>1.2.2 Memorias</h1>
+
+            <div class="Memoria_Principal">
+                <h2>Memoria Principal</h2>
+                <p>
+                    La memoria principal (también llamada ram / memoria de acceso aleatorio) es el lugar donde el procesador guarda de forma temporal los datos y programas que está utilizando en ese momento.
+                    <br>● Características Principales:
+                    <br>&nbsp ○ Volátil: se borra al apagar el equipo.
+                    <br>&nbsp ○ Alta velocidad: permite acceso rápido a los datos para que el procesador no se detenga.
+                    <br>&nbsp ○ Capacidad: se mide en gb (ej. 8 gb, 16 gb, 32 gb). 
+                    <br>&nbsp ○ Función: sirve de “espacio de trabajo” para ejecutar programas y procesos.
+                    <br>● Ejemplo:
+                    <br>Cuando abres un navegador y varias pestañas, esas páginas y procesos están cargados en la memoria ram para que puedas usarlos rápido.
+                </p>
+            </div>
+            
+            <div class="Cache">
+                <h2>Cache</h2>
+                <p>
+                    La caché es una memoria muy rápida y de poca capacidad que se encuentra dentro o muy cerca del procesador. Su función es guardar datos e instrucciones que la cpu usa con frecuencia, para no tener que ir a buscarlos a la ram (que es más lenta).
+                    <br>● Características Principales:
+                    <br>&nbsp ○ Mucho más rápida que la ram, pero también mucho más cara.
+                    <br>&nbsp ○ Capacidad reducida, medida en kb o mb (ej. 256 kb, 8 mb, 32 mb).
+                    <br>&nbsp ○ Jerarquías:
+                    <br>&nbsp &nbsp □ L1: la más rápida, está dentro del núcleo del procesador (muy pequeña).
+                    <br>&nbsp &nbsp □ L2: un poco más grande, algo más lenta.
+                    <br>&nbsp &nbsp □ L3: compartida entre varios núcleos, mayor capacidad, más lenta que l1 y l2.
+                    <br>● Ejemplo Sencillo:
+                    <br>Imagina que la cpu es un estudiante haciendo tarea:
+                    <br>&nbsp ○ Caché = los apuntes que tiene justo enfrente (acceso inmediato).
+                    <br>&nbsp ○ Ram = la mochila con los libros (acceso rápido, pero no inmediato).
+                    <br>&nbsp ○ Disco duro/ssd = la biblioteca (mucho más lento).
+                </p>
+            </div>
+
+            <h1>1.2.3 Sistemas E/S (Entrada/Salida)</h1>
+
+            <div class="Entrada_Salida">
+                <h2>Sistemas de Entrada y Salida</h2>
+                <p>
+                    Los sistemas de entrada y salida (E/S) son las interfaces y dispositivos que permiten la comunicación entre un sistema informático y su
+                    entorno, ya sea el usuario u otros sistemas. Los
+                    dispositivos de entrada introducen datos e
+                    información en la computadora (teclado, ratón)
+                    y los dispositivos de salida presentan el
+                    resultado de las operaciones (monitor,
+                    impresora). También existen dispositivos de E/S
+                    mixtos que realizan ambas funciones, como las
+                    unidades de almacenamiento y las pantallas
+                    táctiles.
+                    <br><b>Dispositivos de Entrada:</b> Son aquellos que permiten al usuario ingresar datos e instrucciones al sistema.
+                    <br>Ejemplos: teclado, ratón, micrófono,
+                    escáner, cámara web, joystick.
+                    <br><b>Dispositivos de Salida:</b> Son los que muestran al usuario el resultado del procesamiento de datos.
+                    <br>Ejemplos: monitor, impresora,
+                    altavoces, auriculares, proyectores.
+                    <br><b>Dispositivos de entrada/salida (mixtos):</b> son dispositivos que pueden tanto recibir información como enviarla.
+                    <br>Ejemplos: pantallas táctiles: permiten la entrada de datos tocando la pantalla y muestran información en ella.
+                </p>
+            </div>
+
+            <div class="Programadas">
+                <h2>Entradas y Salidas Programadas</h2>
+                <p>
+                    La entrada y salida programada (E/S programada) es un método de
+                    transferencia de datos donde la CPU verifica activamente y controla la
+                    comunicación con un dispositivo periférico para leer o escribir datos. En
+                    este método, la CPU realiza "polling", es decir, consulta repetidamente al dispositivo para saber si está listo o si ha habido una entrada, consumiendo recursos de manera ineficiente ya que la CPU debe esperar y verificar el estado del dispositivo.
+                    <br><br><b>Funcionamiento:</b>
+                    <br>● Verificación de la CPU:
+                    <br>La CPU ejecuta instrucciones que consultan al módulo de entrada/salida o al periférico para determinar si están listos para recibir o enviar datos.
+                    <br><br>● Espera activa:
+                    <br>Si el dispositivo no está listo, la CPU espera y vuelve a verificar la condición, repitiendo este proceso hasta que la operación se complete.
+                    <br><br>● Transferencia de datos:
+                    <br>Una vez que el dispositivo está listo, la CPU instruye la transferencia de datos desde o hacia el dispositivo.
+                    <br><br>● Ineficiencia:
+                    <br>Este método es ineficiente porque la CPU pasa mucho tiempo esperando y verificando el estado del dispositivo, en lugar de ejecutar otras tareas.
+                </p>
+            </div>
+
+            <div class="Interrupcion">
+                <h2>Entradas y Salidas Mediante Interrupciones</h2>
+                <p>
+                    La entrada/salida (E/S) mediante interrupciones es un mecanismo donde un dispositivo periférico notifica a la CPU (Unidad Central de
+                    Procesamiento) que necesita atención, generando una interrupción
+                    que suspende la ejecución del programa principal. La CPU, al aceptar
+                    la interrupción, guarda el estado de su programa y ejecuta una
+                    rutina de servicio para gestionar la transferencia de datos con el
+                    periférico. Al finalizar, la CPU recupera su estado y reanuda el
+                    programa interrumpido, lo que permite a la CPU realizar otras tareas
+                    mientras espera la actividad de los periféricos.
+                    <br><br><b>Funcionamiento:</b>
+                    <br>● Generacion de la interrupcion:
+                    <br>Cuando un periférico (como un teclado o disco duro) está listo para transferir datos o necesita una operación, emite una señal de interrupción a la CPU a través de una línea especial de hardware.
+                    <br><br>● Comprobacion y aceptacion:
+                    <br>Después de ejecutar cada instrucción, la CPU verifica si se ha producido una interrupción. Si se detecta una, la CPU la acepta, deteniendo el programa actual.
+                    <br><br>● Salvar Estado:
+                    <br>Antes de atender la interrupción, la CPU guarda el estado actual del programa, incluyendo el contador de programa y los registros, para poder reanudarlo correctamente más tarde.
+                    <br><br>● Ejecucion de la rutina de servicio:
+                    <br>La CPU salta a una rutina de servicio predefinida (también llamada manejador de interrupciones) que se encargará de la operación de E/S necesaria, como leer datos del teclado o escribir en un disco.
+                    <br><br>● Recuperacion del estado:
+                    <br>Una vez que la rutina de servicio termina de realizar la transferencia de datos, la CPU recupera el estado guardado y continúa la ejecución del programa original.
+                </p>
+            </div>
+
+            <div class="Acceso">
+                <h2>Acceso Directo a Memoria</h2>
+                <p>
+                    El acceso directo a memoria (DMA) es una característica
+                    de los sistemas informáticos que permite a los
+                    componentes de hardware (como dispositivos
+                    periféricos) acceder y transferir datos directamente
+                    desde la memoria principal del sistema (RAM) sin la
+                    intervención constante de la unidad central de
+                    procesamiento (CPU). Esta técnica descarga a la CPU de
+                    la tarea de gestionar las transferencias de datos, lo que
+                    aumenta la velocidad del sistema y mejora el
+                    rendimiento general, permitiendo que la CPU se dedique
+                    a otras tareas de computación.
+                </p>
+            </div>
+
+            <div class="Canales">
+                <h2>Canales y Procesadores</h2>
+                <p>
+                    Los canales y los procesadores de entrada/salida (E/S) son
+                    componentes informáticos que trabajan juntos para gestionar la
+                    comunicación entre la CPU y los dispositivos periféricos, como el
+                    teclado, el monitor o la impresora. Los canales de E/S actúan como
+                    vías de comunicación dedicadas que conectan la CPU con los
+                    dispositivos, mientras que los procesadores de E/S son procesadores
+                    auxiliares que se encargan de realizar las operaciones de E/S,
+                    dirigiendo el flujo de datos y aliviando la carga de la CPU principal
+                    para mejorar el rendimiento del sistema.
+                </p>
+            </div>
+
+            <h1>1.2.4 Buses</h1>
+
+            <div class="Tipos_Buses">
+                <h2>Tipos de Buses</h2>
+                <p>
+                    <h4>1.-Segun la funcion que realizan (Buses logicos)</h4>
+                     Estos son los tres componentes principales del bus del sistema, que trabajan juntos para la comunicación interna de la computadora.
+                    <br><br>● <b>Bus de datos:</b>
+                    Es un canal bidireccional por el que se mueven los datos entre los distintos componentes (CPU, memoria, dispositivos de E/S). El "ancho de banda" del bus de datos (la cantidad de líneas que tiene) determina la cantidad de datos que puede transmitir a la vez. Por ejemplo, un bus de 64 bits puede transferir 64 bits de datos simultáneamente.
+                    <br><br>● <b>Bus de direcciones:</b>
+                    Es un canal unidireccional (los datos fluyen en una sola dirección) que transporta las direcciones de memoria o de los dispositivos con los que la CPU desea comunicarse. El ancho de este bus determina la cantidad de memoria que el procesador puede direccionar.
+                    <br><br>● <b>Bus de control:</b>
+                    Es un bus que transporta señales de control y estado para gobernar el uso y el acceso a los buses de datos y de direcciones. Permite sincronizar las operaciones y evita conflictos cuando varios dispositivos intentan usar los buses al mismo tiempo. Las señales de control pueden ser de lectura de memoria, escritura de memoria, interrupciones, etc.
+                    <br>
+                    <h4>2.-Segun el tipo de conexion</h4>
+                    ● <b>Bus paralelo:</b>
+                    Transfiere varios bits de datos de forma simultánea a través de múltiples líneas o cables. Son ideales para distancias cortas, pero pueden sufrir de interferencias a medida que la longitud del cable aumenta.
+                    <br>Ejemplos incluyen los buses antiguos ide y pata.
+                    <br><br>● <b>Bus serie (o serial):</b>
+                    Transfiere los datos bit a bit a través de un único canal. Aunque a primera vista parezca más lento, las altas frecuencias de reloj y la menor interferencia en distancias largas permiten a los buses seriales modernos superar en velocidad a los paralelos. 
+                    <br>Ejemplos actuales son elusb, sata y pcie.
+                    <br>
+                    <h4>3.-Segun su ubicacion o aplicacion</h4>
+                    ● <b>Bus interno (o del sistema):</b>
+                    Conecta los componentes principales dentro de la computadora, como el procesador y la memoria ram. 
+                    <br>Un ejemplo histórico es el front-side bus (fsb).
+                    <br><br>● <b>Bus externo (o de expansion):</b>
+                    Conecta la computadora con dispositivos ytarjetas adicionales. 
+                    <br>Se encuentran en las ranuras de la placa base y algunos ejemplos son:
+                    <br>&nbsp ○ pcie: bus moderno y rápido para tarjetas gráficas y ssds.
+                    <br>&nbsp ○ Usb: estándar para conectar periféricos externos como teclados y ratones.
+                    <br>&nbsp ○ Sata: se usa para conectar dispositivos de almacenamiento como discos duros y ssds.
+                    <br>&nbsp ○ Agp: un bus antiguo, específico para tarjetas gráficas, ahora obsoleto.     
+                </p>
+            </div>
+
+            <div class="Estructura_Buses">
+                <h2>Estructura de Buses</h2>
+                <p>
+                    ● <b>Bus de datos:</b>
+                    Este es el canal por donde se transmiten los datos reales entre los módulos del sistema (CPU, memoria, etc.). El "ancho del bus" se refiere al número de líneas que lo componen y determina cuántos bits puede transferir a la vez. Por ejemplo, un bus de 64 bits puede mover 64 bits de datos simultáneamente, lo que influye directamente en el rendimiento.
+                    <br><br>● <b>Bus de direcciones:</b>
+                    Este es un canal unidireccional que transporta las direcciones de memoria o de los dispositivos de E/S. La CPU usa este bus para especificar la ubicación exacta de donde leer o escribir datos. El ancho del bus de direcciones determina la cantidad máxima de memoria que el sistema puede direccionar.
+                    <br><br>● <b>Bus de control:</b>
+                    Este bus transporta señales de control y estado. Su función es gestionar el uso de los buses de datos y de direcciones para evitar conflictos. Las señales de control incluyen comandos como "lectura de memoria", "escritura de E/S", y otras que sincronizan las operaciones entre los diferentes componentes. Estos tres buses trabajan en conjunto para asegurar una transferencia de información eficiente y organizada.
+                </p>
+            </div>
+
+            <div class="Jerarquia_Buses">
+                <h2>Jerarquia de Buses</h2>
+                <p>
+                    La jerarquía de buses es una organización de múltiples buses con diferentes velocidades para optimizar el rendimiento y evitar "cuellos de botella". En lugar de un solo bus, las computadoras utilizan una estructura con varios niveles:
+                    <br><br>● <b>Buses de alto rendimiento:</b>
+                    Para componentes críticos y de alta velocidad cerca del procesador.
+                    <br><br>● <b>Buses del sistema:</b>
+                    Interconexión central que conecta los buses de alto rendimiento y los de expansión.
+                    <br><br>● <b>Buses de expansion:</b>
+                    Para dispositivos periféricos más lentos, conectados al bus del sistema a través de adaptadores.
+                </p>
+            </div>
+
+        </section>
+        </main>
+    </body>
+
+
+    <footer>
+        <marquee  direction="left"><br>©Cesar Vazquez Godina - Arquitectura de Computadoras - 2025 - Todos los derechos reservados</marquee>
+        <br>
+    </footer>
+</html>

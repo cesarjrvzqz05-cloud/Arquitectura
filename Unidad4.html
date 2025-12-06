@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="C:\Users\Enduser\Documents\Pagina_Arqui\css\pagina.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE-edge">
+        <meta name="viewport"
+        content="width-device-width, initial-scale=1.
+        0">
+        <title>Arquitectura</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="C:\Users\Enduser\Documents\Pagina_Arqui\Index.html" class="logo">
+                <img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\download.png" alt="logo" class="logo-img">
+                <h2 class="logo-nombre"> Unidad 4</h2>
+            </a>
+        </header>
+
+        <main>
+            <section class="Paralela_Secc"> 
+            <h1>4.1 Aspectos Basicos de la Computadora Paralela</h1>
+            <div class="Paralela_Div">
+                <p>
+                    <h2>Aspectos Basicos de la Computadora Paralela</h2>
+                    <br><b>● ¿Qué es la Computación Paralela?: </b>
+                    <br>&nbsp ○ Definición: Es la técnica de dividir un problema grande en subproblemas más pequeños, que luego son resueltos simultáneamente por múltiples procesadores.
+                    <br>&nbsp ○ Objetivo Principal: Reducir el tiempo de ejecución de una aplicación y resolver problemas que serían inviables con un solo procesador.
+                    <br><br><b>● Conceptos Clave: </b>
+                    <br>&nbsp ○ Procesador/Núcleo (Core): La unidad física que ejecuta instrucciones.
+                    <br>&nbsp ○ Hilo (Thread): La secuencia de instrucciones más pequeña que puede ser gestionada de forma independiente.
+                    <br>&nbsp ○ Ley de Amdahl: Establece la mejora máxima de velocidad de un programa, limitada por su parte secuencial (no paralelizable).
+                    <br><br><b>● Analogía: Construir una Casa: </b>
+                    <br>&nbsp ○ Secuencial: Una persona hace todos los trabajos (cimientos, paredes, techo) uno tras otro.
+                </p>
+
+                <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\paralela.PNG" alt="">
+                </div>
+            </div>
+            </section>
+
+            <section class="Paralela_Secc"> 
+            <h1>4.2 Tipos de Computacion Paralela</h1>
+            <div class="Paralela_Tipos">
+                <p>
+                    <h2>Tipos de Computacion Paralela</h2>
+                    <br><b>1.- Paralelismo a Nivel de Bit: </b>
+                    <br>&nbsp ○ Concepto: Aumentar el tamaño de la palabra de datos que un procesador puede manejar (ej. de 16 bits a 32 bits, a 64 bits).
+                    <br>&nbsp ○ Ventaja: Más datos procesados por ciclo de reloj.
+                    <br><br><b>2.- Paralelismo a Nivel de Instrucción (ILP): </b>
+                    <br>&nbsp ○ Concepto: Ejecutar múltiples instrucciones de un mismo programa al mismo tiempo dentro de un solo procesador.
+                    <br>&nbsp ○ Ejemplo: Arquitecturas pipeline y superscalar.
+                    <br><br><b>3.- Paralelismo a Nivel de Hilo (TLP): </b>
+                    <br>&nbsp ○ Concepto: Múltiples hilos (de uno o varios procesos) se ejecutan concurrentemente en los núcleos de un procesador.
+                    <br>&nbsp ○ Ejemplo: Procesadores multinúcleo.
+                    <br><br><b>4.- Paralelismo a Nivel de Tarea/Proceso: </b>
+                    <br>&nbsp ○ Concepto: Tareas o procesos completamente independientes se ejecutan en paralelo en diferentes procesadores.
+                    <br>&nbsp ○ Ejemplo: Servidor web atendiendo múltiples usuarios a la vez.
+                </p>
+            </div>
+            </section>
+
+            <section class="Sistema_Memoria"> 
+            <h1>4.3 Sistema de Memoria Compartida</h1>
+            <div class="Memoria_Compartida">
+                <p>
+                    <h2>Sistema de Memoria Compartida</h2>
+                    <br><b>¿Qué es?: </b>
+                    <br>&nbsp ○ Múltiples procesadores (núcleos) comparten un único espacio de direcciones de memoria física.
+                    <br>&nbsp ○ Todos los procesadores acceden a esta memoria global a través de un bus o una red de interconexión.
+                    <br><br><b>Arquitectura UMA (Uniform Memory Access): </b>
+                    <br>&nbsp ○ Característica Principal: El tiempo de acceso a la memoria es igual para todos los procesadores, sin importar qué procesador realiza la solicitud.
+                    <br>&nbsp ○ Ventaja: Programación más sencilla. La comunicación entre procesos se realiza leyendo y escribiendo en la memoria compartida.
+                    <br>&nbsp ○ Desventaja: El bus de memoria puede convertirse en un cuello de botella al aumentar el número de procesadores.
+                    <br>&nbsp ○ Ejemplo: Computadores multinúcleo tradicionales, servidores SMP (Symmetric Multi-Processing).
+                    <br><br><b>Arquitectura NUMA (Non-Uniform Memory Access): </b>
+                    <br>&nbsp ○ Característica Principal: El tiempo de acceso a la memoria NO es uniforme. Cada procesador tiene una memoria local de acceso rápido, pero también puede acceder a la memoria remota de otros procesadores (más lento).
+                    <br>&nbsp ○ Ejemplo: Ventaja: Escalabilidad superior a UMA. Reduce la contención en el bus.
+                    <br>&nbsp ○ Desventaja: La programación debe ser consciente de la localidad de los datos para maximizar el rendimiento.
+                    <br>&nbsp ○ Ejemplo: Servidores de gama alta con múltiples sockets de procesadores.
+                </p>
+            </div>
+            </section>
+
+            <section class="Sistema_Distribuida"> 
+            <h1>4.4 Sistema de Memoria Distribuida</h1>
+            <div class="Memoria_Distribuida">
+                <p>
+                    <h2>Sistema de Memoria Distribuida</h2>
+                    <br><b>¿Qué es?: </b>
+                    <br>&nbsp ○ Cada procesador (nodo) tiene su propia memoria privada e independiente.
+                    <br>&nbsp ○ No existe un espacio global de direcciones de memoria.
+                    <br>&nbsp ○ Los nodos están conectados mediante una red de alta velocidad (ej: InfiniBand, Ethernet).
+                    <br><br><b>Caracteristicas: </b>
+                    <br>&nbsp ○ Comunicación: La interacción entre procesos en diferentes nodos se realiza mediante el paso de mensajes (Message Passing).
+                    <br>&nbsp ○ Escalabilidad: Muy alta. Se pueden conectar miles de nodos.
+                    <br>&nbsp ○ Ventaja: No hay cuellos de botella de memoria y el costo es menor.
+                    <br>&nbsp ○ Desventaja: La programación es más compleja. El programador debe gestionar explícitamente la comunicación y la distribución de datos.
+                    <br><br><b>¿Cómo funciona?: </b>
+                    <br>&nbsp ○ Múltiples nodos conectados en red comparten su memoria RAM
+                    <br>&nbsp ○ Abstracción unificada que presenta memoria distribuida como un solo espacio
+                    <br>&nbsp ○ Comunicación mediante protocolos de red (TCP/IP, InfiniBand, RDMA)
+                    <br>&nbsp ○ Sincronización para mantener coherencia entre nodos
+                    <br><br><b>Ventajas clave: </b>
+                    <br><br><b>Rendimiento: </b>
+                    <br>&nbsp ○ Acceso más rápido que disco
+                    <br>&nbsp ○ Paralelismo masivo
+                    <br>&nbsp ○ Menos cuellos de botella
+                    <br><br><b>Escalabilidad: </b>
+                    <br>&nbsp ○ Agregar nodos aumenta capacidad
+                    <br>&nbsp ○ Escala horizontalmente
+                    <br>&nbsp ○ Balanceo de carga automático
+                    <br><br><b>Confiabilidad: </b>
+                    <br>&nbsp ○ Tolerancia a fallos
+                    <br>&nbsp ○ Alta disponibilidad
+                    <br>&nbsp ○ Recuperación automática
+                    <br><br><b>Usos de Sistemas de Memoria Distribuida:</b>
+                       <br>1. Caché distribuido - Compartir datos de caché entre múltiples servidores
+                       <br>2.Sesiones de usuario compartidas - Sesiones accesibles desde cualquier servidor web
+                       <br>3.Procesamiento de big data - Análisis de grandes volúmenes de datos en memoria
+                       <br>4. Bases de datos en memoria - Almacenamiento rápido de datos distribuidos
+                       <br>5. Computación científica - Procesamiento paralelo de simulaciones y cálculos
+                       <br>6.Sistema de mensajería - Colas de mensajes distribuidas y pub/sub
+                       <br>7. Almacenamiento de configuración - Configuraciones centralizadas accesibles por todos los nodos
+                        <br>8. Juegos online - Estado de juego compartido entre servidores
+                        <br>9. Comercio electrónico - Carritos de compra y inventario distribuido
+                        <br>10. Análisis en tiempo real - Procesamiento de streams de datos inmediato
+                        <br>11. Machine Learning distribuido - Entrenamiento de modelos en paralelo
+                        <br>12. API caching - Respuestas de API cacheadas across múltiples instancias
+                        <br>13. Balanceo de carga stateful - Distribución inteligente de carga con estado compartido
+                        <br>14.Sistemas de recomendación - Datos de perfil de usuario accesibles globalmente
+                        <br>15. Monitorización en tiempo real - Métricas y logs compartidos para monitoring
+                    </b>
+                </p>
+                <div class="imagen">
+                        <br><img src="C:\Users\Enduser\Documents\Pagina_Arqui\img\distribuida.PNG" alt="">
+                </div>
+            </div>
+            </section>
+
+            <section class="Casos"> 
+            <h1>4.5 Casos de Estudio</h1>
+            <div class="Casos_Estudio">
+                <p>
+                    <h2>Casos de Estudio</h2>
+                    <br><b>Aspectos basicos de la computacion paralela:</b>
+                    <br>&nbsp <br><b>● ¿Qué es la Computación Paralela?: </b>
+                    <br>&nbsp &nbsp ○ Caso: Comparar el rendimiento de un algoritmo en 1, 2, 4, 8 y 16 procesadores. 
+                    <br>&nbsp &nbsp ○ Ejemplo: Paralelización de multiplicación de matrices y evaluación de ganancia.
+                    <br><br>&nbsp<b>● Granularidad y balance de carga: </b>
+                    <br>&nbsp &nbsp ○ Caso: Procesamiento de imágenes donde algunas regiones requieren más cálculo que otras.
+                
+                    <br><br><b>Tipos de computación paralela:</b>
+                    <br>&nbsp <br><b>● Paralelismo a nivel de instrucción (ILP): </b>
+                    <br>&nbsp &nbsp ○ Caso: Procesadores superescalares (Intel, AMD). 
+                    <br>&nbsp <br><b>● Paralelismo a nivel de hilo (TLP): </b>
+                    <br>&nbsp &nbsp ○ Caso: Servidores web manejando múltiples solicitudes simultáneamente.
+                    <br>&nbsp <br><b>● Paralelismo a nivel de datos (Data Parallelism): </b>
+                    <br>&nbsp &nbsp ○ Caso: Aplicación de filtros a imágenes o operaciones sobre grandes arreglos en GPUs.
+                    <br>&nbsp <br><b>● Paralelismo a nivel de tareas (Task Parallelism): </b>
+                    <br>&nbsp &nbsp ○ Caso: Simulación de clima donde diferentes tareas (viento, temperatura, presión) se ejecutan concurrentemente.
+                    <br><br><b>Sistema de memoria compartida:</b>
+                    <br>&nbsp <br><b>● Programación con hilos (pthreads, OpenMP): </b>
+                    <br>&nbsp &nbsp ○ Caso: Cálculo paralelo de π usando integración numérica con OpenMP.
+                    <br>&nbsp <br><b>● Problemas de sincronización: </b>
+                    <br>&nbsp &nbsp ○ Caso: Implementación de un buffer multihilo productor-consumidor con mutex y semáforos.
+                    <br>&nbsp <br><b>● Arquitecturas UMA y NUMA: </b>
+                    <br>&nbsp &nbsp ○ Caso: Comparación de rendimiento en sistemas multiprocesador (ej. servidores NUMA como los de AMD Epyc). 
+                    <br><br><b>Sistemas de memoria distribuida:</b>
+                    <br>&nbsp <br><b>● Passing de mensajes (MPI): </b>
+                    <br>&nbsp &nbsp ○ Caso: Resolución paralela de ecuaciones en derivadas parciales en un cluster.
+                    <br>&nbsp <br><b>● Computación en clusters y grids: </b>
+                    <br>&nbsp &nbsp ○ Caso: Proyecto SETI@home o procesamiento de datos del LHC (Large Hadron Collider).
+                     <br>&nbsp <br><b>● Algoritmos distribuidos:</b>
+                    <br>&nbsp &nbsp ○ Caso: Algoritmo de elección de líder en un anillo de procesos.
+                </p>
+            </div>
+            </section>
+        </main>
+    </body>
+
+    <footer>
+        <marquee  direction="left"><br>©Cesar Vazquez Godina - Arquitectura de Computadoras - 2025 - Todos los derechos reservados</marquee>
+        <br>
+    </footer>
+</html>
